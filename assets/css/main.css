@@ -1,5 +1,87 @@
-
+/* glavni css */
 
 body {
-	background: blue;
+	font-family: 'Red Hat Text', sans-serif;
 }
+
+.topbar {
+	background: #000;
+	color: #fff;
+	padding: 7px 0;
+}
+
+.topbar span {
+	margin-right: 20px;
+}
+
+.topbar img {
+	margin-top: -4px;
+	margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+
+	.topbar {
+		display: none;
+	}
+
+}
+
+.navbar-brand {
+    margin-left: -15px;
+}
+
+.navbar .nav-link {
+	font-size: 18px;
+	margin-left: 20px;
+}
+
+.navbar .nav-link.active {
+	font-weight: 500;
+}
+
+@media (min-width: 768px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+
+header {
+	height: 70vh;
+}
+
+header .container {
+
+}
+
+@media (max-width: 768px) {
+
+	header {
+		height: 80vh;
+	}
+
+}
+
+.header--inner {
+	padding: 170px 0;
+}
+
+.header--title {
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+.header--cta {
+	margin-top: 20px;
+}
+
+.header--link {
+	font-size: 18px;
+	color: #E69138;
+}
+
+.orange {
+	color: #E69138;
+}
+
+
