@@ -82,11 +82,12 @@
 					<div class="col">
     					<div class="card h-100">
 
-							<div class="card-img-container">			
+							<div class="card-custom-img">
+									
+								<?php the_post_thumbnail( 'full', array( 'class'=>'card-img-top img-fluid' ) ); ?>
 							
 								<a href="<?php echo $post_link; ?>">
-									<?php the_post_thumbnail( 'full', array( 'class'=>'card-img-top img-fluid' ) ); ?>
-									<div class="card-img-overlay">
+									<div class="overlay">
 										<img class="plus-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/plus-icon.svg">
 									</div>
 								</a>

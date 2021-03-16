@@ -124,4 +124,18 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 register_nav_menu('main-menu', 'Main menu');
 
 
+/* excerpt options */
+function hksp_excerpt_length( $length ) {
+  return 35;
+}
+
+add_filter( 'excerpt_length', 'hksp_excerpt_length');
+
+function new_excerpt_more( $more ) {
+  return '...'; // replace the normal [.....] with a empty string
+}  
+
+add_filter('excerpt_more', 'new_excerpt_more');
+
+
 ?>

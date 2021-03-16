@@ -15,8 +15,8 @@
 <!-- topbar -->
 <div class="topbar">
 	<div class="container">
-		<span class="email"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.svg"> hk.socijalnih.pedagoga@gmail.com</span>
-		<span class="location"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/lokacija.svg"> Ulica sv. Mateja 70/a, Dugave 10000 Zagreb</span>
+		<span class="email"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.svg"> info@hksp.com</span>
+		<span class="location"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/lokacija.svg"> Ulica sv. Mateja 70/a, 10010 Zagreb</span>
 	</div>
 </div>
 
