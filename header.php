@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-	<title><?php wp_title(); ?></title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hrvatska komora socijalnih pedagoga je samostalna i neovisna strukovna organizacija socijalnih pedagoga u Republici Hrvatskoj koja se brine za razvoj, stručnost, etičnost, zakonitost i ugled u socijalnopedagoškoj djelatnosti na teritoriju Republike Hrvatske.">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +16,7 @@
 <div class="topbar">
 	<div class="container">
 		<span class="email"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.svg"> info@hksp.com</span>
-		<span class="location"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/lokacija.svg"> Ulica sv. Mateja 70/a, 10010 Zagreb</span>
+		<span class="location"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/lokacija.svg"> Ulica sv. Mateja 70/a, 10000 Zagreb</span>
 	</div>
 </div>
 

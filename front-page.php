@@ -7,7 +7,7 @@
 	<div class="container">
 		<div class="header--inner">
 			<h1 class="header--title">
-				Hrvatska komora <br><span class="orange">socijalnih pedagoga</span>
+				Hrvatska komora <span class="orange">socijalnih pedagoga</span>
 			</h1>
 			<div class="header--cta">
 				<a href="o-nama/" class="header--link">Više o nama</a>
@@ -20,7 +20,7 @@
 <div class="boxevi">
 	<div class="container">
 		<div class="row row-cols-1 row-cols-lg-3 g-4">
-			<div class="col mb-4">
+			<div class="col">
 				<a href="clanstvo/">
 					<div class="card">
 						<div class="card-body">
@@ -31,23 +31,23 @@
 				</a>
 			</div>
 
-			<div class="col mb-4">
-				<a href="edukacije/">
+			<div class="col">
+				<a href="inozemne-kvalifikacije/">
 					<div class="card">
 						<div class="card-body">
 							<span class="material-icons">school</span>
-							<span class="icon-text">Edukacije za članove</span>
+							<span class="icon-text">Inozemne kvalifikacije</span>
 						</div>
 					</div>
 				</a>
 			</div>
 
-			<div class="col mb-4">
-				<a href="prijava/">
+			<div class="col">
+				<a href="dokumenti/">
 					<div class="card">
 						<div class="card-body">
-							<span class="material-icons">login</span>
-							<span class="icon-text">Prijava u sustav</span>
+							<span class="material-icons">post_add</span>
+							<span class="icon-text">Dokumenti</span>
 						</div>
 					</div>
 				</a>
@@ -68,7 +68,7 @@
 			<?php 
 			
 			$args = array( 'category_name' => 'novosti', 
-							'posts_per_page' => 9 
+							'posts_per_page' => 6 
 							); 
 				
 			$the_query = new WP_Query( $args ); 
@@ -82,6 +82,8 @@
 					<div class="col">
     					<div class="card h-100">
 
+						<?php if ( has_post_thumbnail() ) : ?>
+
 							<div class="card-img-container">			
 							
 								<a href="<?php echo $post_link; ?>">
@@ -92,6 +94,8 @@
 								</a>
 								
 							</div>
+
+						<?php endif; ?>
 
 							<div class="card-body">
 								<div class="card-meta">
@@ -123,14 +127,12 @@
 
 		</div><!-- row -->
 
+		<div class="d-flex justify-content-center">
+			<a href="novosti/" class="pagination-btn">arhiva vijesti</a>
+		</div>
+		
 	</div>
 
 </div>
-
-
-
-
-
-
 
 <?php get_footer(); ?>
